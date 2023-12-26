@@ -1,0 +1,11 @@
+BOT_AH_TABLE_SCHEMA = """
+CREATE TABLE IF NOT EXISTS ah_bot_accounts (
+    bot_account_id INT AUTO_INCREMENT PRIMARY KEY,
+    character_name VARCHAR(255) NOT NULL,
+    current_gold BIGINT UNSIGNED NOT NULL DEFAULT 0,
+    profession_1 VARCHAR(50),
+    profession_2 VARCHAR(50),
+    latest_activity TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    number_of_listings INT UNSIGNED NOT NULL DEFAULT 0
+)
+"""
