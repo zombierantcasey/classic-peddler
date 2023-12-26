@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="peddler",
-    version="0.1.0",
+    version="0.1.1",
     author="Pierre MacKay",
     author_email="mail@pierremackay.com",
     install_requires=["mysql-connector-python"],
